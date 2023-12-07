@@ -19,10 +19,10 @@ void	ft_putnbr_fd(int nb, int fd)
 	l_nb = nb;
 	if (l_nb < 0)
 	{
-		write(fd, "-", 1);
+		ft_putchar_fd('-', fd);
 		l_nb *= -1;
 	}
 	if (l_nb >= 10)
 		ft_putnbr_fd(l_nb / 10, fd);
-	write(fd, (char []){'0' + (l_nb % 10)}, 1);
+	ft_putchar_fd('0' + (l_nb % 10), fd);
 }

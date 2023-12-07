@@ -32,7 +32,6 @@ bonus: $(OBJ_BONUS)
 	@echo "Libft bonus compiled !"
 
 %.o : %.c
-	@mkdir -p obj
 	@echo "Compiling: $<"
 	@$(CC) $(CFLAGS) -I. -c $< -o $@
 

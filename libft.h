@@ -104,7 +104,7 @@ void	*ft_memmove(void *dest, const void *src, size_t size);
  * @param dest A pointer to the destination.
  * @param src A pointer to the source.
  * @param size The number of characters to copy.
- * @return A pointer to the destination.
+ * @return The length of the new string.
  */
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 
@@ -113,7 +113,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size);
  * @param dest A pointer to the destination.
  * @param src A pointer to the source.
  * @param size The number of characters to concatenate.
- * @return A pointer to the destination.
+ * @return The length of the new string.
  */
 size_t	ft_strlcat(char *dest, const char *src, size_t size);
 
