@@ -14,11 +14,13 @@
 
 char	*ft_strdup(const char *str)
 {
+	size_t	str_len;
 	char	*output;
 
-	output = malloc((ft_strlen(str) + 1) * sizeof(char));
+	str_len = ft_strlen(str);
+	output = malloc((str_len + 1) * sizeof(char));
 	if (!output)
 		return (NULL);
-	ft_strlcpy(output, str, ft_strlen(str) + 1);
+	ft_strlcpy(output, str, str_len + 1);
 	return (output);
 }
